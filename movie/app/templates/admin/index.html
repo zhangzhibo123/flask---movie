@@ -1,0 +1,34 @@
+{% extends "admin/admin.html" %}
+{% block a %}
+     {% if login_flag == 1 %}
+         {{ username }}
+     {% else %}
+        游客,请您登陆!!
+     {% endif %}
+ {% endblock %}
+{% block b %}
+     {% if login_flag == 1 %}
+         <a>
+            欢迎您，<span style="color: red"> {{ username }} </span>
+         </a>
+     {% else %}
+        游客,请您登陆!!
+     {% endif %}
+ {% endblock %}
+{% block c %}
+     {% if login_flag == 1 %}
+         <a>
+            欢迎您，<span style="color: red"> {{ username }} </span>
+         </a>
+     {% else %}
+        游客,请您登陆!!
+     {% endif %}
+ {% endblock %}
+
+{% block content %}
+    <div align="center">
+        <h2>欢迎访问微电影后台管理系统</h2>
+    </div>
+{% endblock %}
+
+
